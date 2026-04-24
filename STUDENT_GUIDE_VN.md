@@ -17,7 +17,7 @@ Chào mừng bạn đến với Lab Xây dựng Data Pipeline thực tế. Trong
 
 ### 1. Lead Data Architect (Role 1)
 - **File chính**: `schema.py`
-- **Mục tiêu**: Định nghĩa `UnifiedDocument` bằng Pydantic.
+- **Mục tiêu**: Định nghĩa `Un11fiedDocument` bằng Pydantic.
 - **Thử thách**: Dự đoán sự thay đổi. Vào phút thứ 60, "khách hàng" sẽ yêu cầu thay đổi schema (v2). Hãy sẵn sàng để di chuyển dữ liệu.
 
 ### 2. ETL/ELT Builder (Role 2)

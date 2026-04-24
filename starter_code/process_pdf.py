@@ -1,50 +1,91 @@
 import google.generativeai as genai
 import os
 import json
+import time
 from dotenv import load_dotenv
+
+from schema import UnifiedDocument, SourceType
 
 load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
-def extract_pdf_data(file_path):
+
+def _safe_json_load(s: str):
+    s = s.strip()
+    # remove markdown fences
+    if s.startswith("```json"):
+        s = s[len("```json"):]
+    if s.startswith("```"):
+        s = s[3:]
+    if s.endswith("```"):
+        s = s[:-3]
+    try:
+        return json.loads(s)
+    except Exception:
+        # try to find first { and last }
+        start = s.find('{')
+        end = s.rfind('}')
+        if start != -1 and end != -1:
+            try:
+                return json.loads(s[start:end+1])
+            except Exception:
+                pass
+    raise ValueError("Could not parse JSON from model response")
+
+
+def extract_pdf_data(file_path, max_retries=5, backoff_factor=1.5):
     if not os.path.exists(file_path):
         print(f"Error: File not found at {file_path}")
         return None
-        
-    # Thay đổi model name để tránh lỗi 404 trên các phiên bản API cũ
+
     model = genai.GenerativeModel('gemini-2.5-flash')
-    
+
     print(f"Uploading {file_path} to Gemini...")
     try:
         pdf_file = genai.upload_file(path=file_path)
     except Exception as e:
         print(f"Failed to upload file to Gemini: {e}")
         return None
-        
-    prompt = """
-Analyze this document and extract a summary and the author. 
-Output exactly as a JSON object matching this exact format:
-{
-    "document_id": "pdf-doc-001",
-    "content": "Summary: [Insert your 3-sentence summary here]",
-    "source_type": "PDF",
-    "author": "[Insert author name here]",
-    "timestamp": null,
-    "source_metadata": {"original_file": "lecture_notes.pdf"}
-}
-"""
-    
-    print("Generating content from PDF using Gemini...")
-    response = model.generate_content([pdf_file, prompt])
-    content_text = response.text
-    
-    # Simple cleanup if the response is wrapped in markdown json block
-    if content_text.startswith("```json"):
-        content_text = content_text[7:]
-    if content_text.endswith("```"):
-        content_text = content_text[:-3]
-    if content_text.startswith("```"):
-        content_text = content_text[3:]
-        
-    extracted_data = json.loads(content_text.strip())
-    return extracted_data
+
+    prompt = (
+        "Analyze this document and return a JSON object with: document_id, title, summary, content, "
+        "source_type, author, timestamp, and source_metadata (include original filename). "
+        "If fields are unknown, set them to null or empty strings."
+    )
+
+    attempt = 0
+    while attempt <= max_retries:
+        try:
+            print(f"Generating content from PDF using Gemini (attempt {attempt+1})...")
+            response = model.generate_content([pdf_file, prompt])
+            content_text = getattr(response, 'text', None) or str(response)
+            data = _safe_json_load(content_text)
+
+            # Ensure required fields and map to UnifiedDocument
+            doc = UnifiedDocument(
+                document_id=data.get('document_id') or os.path.basename(file_path),
+                title=data.get('title') or data.get('document_id'),
+                summary=data.get('summary') or None,
+                content=data.get('content') or data.get('summary') or "",
+                source_type=SourceType.PDF,
+                author=data.get('author') or "Unknown",
+                timestamp=data.get('timestamp'),
+                source_metadata=data.get('source_metadata') or {"original_file": os.path.basename(file_path)}
+            )
+            return doc
+
+        except Exception as e:
+            msg = str(e)
+            # Detect rate limit
+            if '429' in msg or 'rate' in msg.lower() or 'quota' in msg.lower():
+                wait = (backoff_factor ** attempt) * 1.0
+                print(f"Rate limited by Gemini, sleeping {wait:.1f}s before retry...")
+                time.sleep(wait)
+                attempt += 1
+                continue
+            else:
+                print(f"Failed to generate content from Gemini: {e}")
+                return None
+
+    print("Exceeded max retries for Gemini PDF extraction")
+    return None
