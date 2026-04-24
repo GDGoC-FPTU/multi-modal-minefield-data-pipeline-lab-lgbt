@@ -35,14 +35,65 @@ def main():
     output_path = os.path.join(os.path.dirname(SCRIPT_DIR), "processed_knowledge_base.json")
     # ----------------------------------------------
 
-    # TODO: Call each processing function (extract_pdf_data, clean_transcript, etc.)
-    # TODO: Run quality gates (run_quality_gate) before adding to final_kb
-    # TODO: Save final_kb to output_path using json.dump
-    
-    # Example:
-    # doc = extract_pdf_data(pdf_path)
-    # if doc and run_quality_gate(doc):
-    #     final_kb.append(doc)
+    # --- Run processors ---
+    def _serialize(doc):
+        if doc is None:
+            return None
+        try:
+            # pydantic model
+            d = doc.dict()
+        except Exception:
+            try:
+                d = doc.to_dict()
+            except Exception:
+                d = dict(doc)
+        # normalize timestamp
+        ts = d.get('timestamp')
+        if ts is not None:
+            try:
+                d['timestamp'] = ts.isoformat()
+            except Exception:
+                d['timestamp'] = str(ts)
+        return d
+
+    # PDF
+    pdf_doc = extract_pdf_data(pdf_path)
+    if pdf_doc and run_quality_gate(pdf_doc):
+        final_kb.append(_serialize(pdf_doc))
+
+    # Transcript (use price-aware cleaner)
+    try:
+        from process_transcript import clean_transcript_with_price as clean_transcript_fn
+    except Exception:
+        from process_transcript import clean_transcript as clean_transcript_fn
+    trans_doc = clean_transcript_fn(trans_path)
+    if trans_doc and run_quality_gate(trans_doc):
+        final_kb.append(_serialize(trans_doc))
+
+    # HTML (may return list)
+    html_docs = parse_html_catalog(html_path)
+    for h in (html_docs or []):
+        if h and run_quality_gate(h):
+            final_kb.append(_serialize(h))
+
+    # CSV
+    csv_docs = process_sales_csv(csv_path)
+    for c in (csv_docs or []):
+        if c and run_quality_gate(c):
+            final_kb.append(_serialize(c))
+
+    # Legacy code
+    code_doc = extract_logic_from_code(code_path)
+    if code_doc and run_quality_gate(code_doc):
+        final_kb.append(_serialize(code_doc))
+
+    # Save
+    try:
+        with open(output_path, 'w', encoding='utf-8') as out:
+            json.dump(final_kb, out, ensure_ascii=False, indent=2)
+        print(f"Wrote processed knowledge base to {output_path}")
+    except Exception as e:
+        print(f"Failed to write output: {e}")
 
     end_time = time.time()
     print(f"Pipeline finished in {end_time - start_time:.2f} seconds.")
