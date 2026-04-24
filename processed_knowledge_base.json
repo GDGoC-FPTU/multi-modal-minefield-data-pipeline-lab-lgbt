@@ -1,0 +1,441 @@
+[
+  {
+    "document_id": "2182354",
+    "title": "Purchase Order",
+    "summary": "This document is a Purchase Order (P.O. No. 2182354) from SNC-LAVALIN O&M Inc. (Office Operation-Pacific) to ADVANCED PROPERTY SYSTEMS LTD. for routine maintenance. The order includes a general maintenance call and mileage outside DUA, totaling $51.85. The work involves addressing issues with doors that are hard to open/close and a stuck latch at a site located at 10370 Teresa Road, Lake Country.",
+    "content": "11/2/2023 13:35:08 Page - 1\nSNC-LAVALIN O&M\nPurchase Order\nP.O. No. 2182354\nW.O. No. 11801597\nRegion 01 Pacific\nDate Ordered 11/2/2023\nProj. No. 020201\nType T- Routine Maintenance\nFrom: SNC Lavalin O&M Inc.\nOffice Operation-Pacific\n1075 West Georgia, 12th Floor\nVancouver BC V6E 3C9\nTo: ADVANCED PROPERTY SYSTEMS LTD.\n3120 Elliott Road\nWest Kelowna BC V4T 1M2\nTel. 514 - 683-7370\nΤο 250 - 493-8284\nFax 514 - 683-7370\nFax 250 - 493-8284\nBuyer ANYKON\nCustomer Contact ΑΝΥΚΟΝ\nSite No. V4V0224\nControl Number 3DI AN E201 LATCH\nInside DUA: N 336 KM\nLocation 10370 TERESA ROAD\nCity LAKE COUNTRY\nType B Mod Type E-201-E-201\nModules 161-16\nLock 13493\nPad No Pad\nLn Item # Description\nQuantity U/M Unit Price Total Original PO\n1 7T-GMC1 General Maintenance Call\n1.00 MD 50.897 50.90\nDate Req. 11/4/2023 Time 10:33:00\n2 7T-DUA1 Mileage outside DUA\n1.00 KM .951 .95\nDate Req. 11/4/2023 Time 10:33:00\nE201 MOD 2 ML 13493\nRSCM HAVING A HARD TIME OPENING/CLOSING DOORS\nLATCH AT THE TOP OF DOORS GETS STUCK\nPLS ATTEND\nREPAIR BACK TO SECURE WORKING ORDER\nTAKE BEFORE/AFTER PICS FOR UPLOAD\nSEND EV & FB\nFAX FROM LAURA 250-766-3105\nTHANK YOU\nPurchase Order Total : 51.85\nSubcontractor must ensure all mail and locks are removed from equipment being taken out of service.\nThis mail and these locks must be returned to the depot. Failure to do this may result in\ndisciplinary action up to and including termination of contract\n*** End of PO ***",
+    "source_type": "PDF",
+    "author": "SNC-LAVALIN O&M Inc.",
+    "timestamp": "2023-11-02T13:35:08",
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_filename": "Purchase Order.pdf"
+    }
+  },
+  {
+    "document_id": "demo_transcript.txt",
+    "title": null,
+    "summary": ": Chào mừng các bạn đến với buổi học hôm nay về Data Pipeline Engineering. : Hôm nay chúng ta sẽ nói về việc xử lý dữ liệu phi cấu trúc, ví dụ như PDF và Video. : Một vấn đề lớn là Semantic Drift. Các bạn có biết không? : Dạ em có nghe qua, nhưng nó có liên quan gì đến Zillow không ạ? : Có chứ! Zill...",
+    "content": ": Chào mừng các bạn đến với buổi học hôm nay về Data Pipeline Engineering. : Hôm nay chúng ta sẽ nói về việc xử lý dữ liệu phi cấu trúc, ví dụ như PDF và Video. : Một vấn đề lớn là Semantic Drift. Các bạn có biết không? : Dạ em có nghe qua, nhưng nó có liên quan gì đến Zillow không ạ? : Có chứ! Zillow là ví dụ điển hình của việc mô hình bị hỏng do dữ liệu đầu vào thay đổi. : Đừng để mô hình của bạn trở thành 'rác vào, rác ra'. : À, một lưu ý nhỏ cho bài tập: Giá của sản phẩm VinAI Pro là năm trăm nghìn VND. Nhớ nhé, 500,000 VND. : : Bây giờ chúng ta hãy bắt đầu thực hành.",
+    "source_type": "Video",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "demo_transcript.txt",
+      "price_extracted": 500000.0,
+      "detected_price_vnd": 500000
+    }
+  },
+  {
+    "document_id": "html-1",
+    "title": "item-1",
+    "summary": "{'mã sp': 'SP-001', 'tên sản phẩm': 'VinAI Laptop Pro 14\"', 'danh mục': 'Laptop', 'giá niêm yết': '28,500,000 VND', 'tồn kho': '45', 'đánh giá': '4.8/5'}",
+    "content": "mã sp: SP-001 tên sản phẩm: VinAI Laptop Pro 14\" danh mục: Laptop giá niêm yết: 28,500,000 VND tồn kho: 45 đánh giá: 4.8/5",
+    "source_type": "HTML",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "product_catalog.html",
+      "price_raw": null
+    }
+  },
+  {
+    "document_id": "html-2",
+    "title": "item-2",
+    "summary": "{'mã sp': 'SP-002', 'tên sản phẩm': 'Chuột không dây ErgoMax', 'danh mục': 'Phụ kiện', 'giá niêm yết': 'N/A', 'tồn kho': '0', 'đánh giá': '4.2/5'}",
+    "content": "mã sp: SP-002 tên sản phẩm: Chuột không dây ErgoMax danh mục: Phụ kiện giá niêm yết: N/A tồn kho: 0 đánh giá: 4.2/5",
+    "source_type": "HTML",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "product_catalog.html",
+      "price_raw": null
+    }
+  },
+  {
+    "document_id": "html-3",
+    "title": "item-3",
+    "summary": "{'mã sp': 'SP-003', 'tên sản phẩm': 'Màn hình 4K 27\" ProDisplay', 'danh mục': 'Màn hình', 'giá niêm yết': 'Liên hệ', 'tồn kho': '12', 'đánh giá': '4.9/5'}",
+    "content": "mã sp: SP-003 tên sản phẩm: Màn hình 4K 27\" ProDisplay danh mục: Màn hình giá niêm yết: Liên hệ tồn kho: 12 đánh giá: 4.9/5",
+    "source_type": "HTML",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "product_catalog.html",
+      "price_raw": null
+    }
+  },
+  {
+    "document_id": "html-4",
+    "title": "item-4",
+    "summary": "{'mã sp': 'SP-004', 'tên sản phẩm': 'Bàn phím cơ Blue Switch', 'danh mục': 'Phụ kiện', 'giá niêm yết': '1,850,000 VND', 'tồn kho': '-5', 'đánh giá': '4.5/5'}",
+    "content": "mã sp: SP-004 tên sản phẩm: Bàn phím cơ Blue Switch danh mục: Phụ kiện giá niêm yết: 1,850,000 VND tồn kho: -5 đánh giá: 4.5/5",
+    "source_type": "HTML",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "product_catalog.html",
+      "price_raw": null
+    }
+  },
+  {
+    "document_id": "html-5",
+    "title": "item-5",
+    "summary": "{'mã sp': 'SP-005', 'tên sản phẩm': 'Tai nghe chống ồn AI-Ear Pro', 'danh mục': 'Âm thanh', 'giá niêm yết': '3,200,000 VND', 'tồn kho': '28', 'đánh giá': 'không có đánh giá'}",
+    "content": "mã sp: SP-005 tên sản phẩm: Tai nghe chống ồn AI-Ear Pro danh mục: Âm thanh giá niêm yết: 3,200,000 VND tồn kho: 28 đánh giá: không có đánh giá",
+    "source_type": "HTML",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "product_catalog.html",
+      "price_raw": null
+    }
+  },
+  {
+    "document_id": "1",
+    "title": "",
+    "summary": "{'id': 1, 'product_name': 'Laptop VinAI Pro 14', 'category': 'Electronics', 'price': '$1200', 'currency': 'USD', 'date_of_sale': '2026-01-15', 'seller_id': 'S001', 'stock_quantity': 45.0, 'price_clean': 1200.0, 'date_norm': '2026-01-15'}",
+    "content": "{'id': 1, 'product_name': 'Laptop VinAI Pro 14', 'category': 'Electronics', 'price': '$1200', 'currency': 'USD', 'date_of_sale': '2026-01-15', 'seller_id': 'S001', 'stock_quantity': 45.0, 'price_clean': 1200.0, 'date_norm': '2026-01-15'}",
+    "source_type": "CSV",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "sales_records.csv",
+      "price_clean": 1200.0,
+      "date_norm": "2026-01-15"
+    }
+  },
+  {
+    "document_id": "2",
+    "title": "",
+    "summary": "{'id': 2, 'product_name': 'Wireless Mouse', 'category': 'Electronics', 'price': '250000', 'currency': 'VND', 'date_of_sale': '15/01/2026', 'seller_id': 'S002', 'stock_quantity': 120.0, 'price_clean': 250000.0, 'date_norm': nan}",
+    "content": "{'id': 2, 'product_name': 'Wireless Mouse', 'category': 'Electronics', 'price': '250000', 'currency': 'VND', 'date_of_sale': '15/01/2026', 'seller_id': 'S002', 'stock_quantity': 120.0, 'price_clean': 250000.0, 'date_norm': nan}",
+    "source_type": "CSV",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "sales_records.csv",
+      "price_clean": 250000.0,
+      "date_norm": NaN
+    }
+  },
+  {
+    "document_id": "3",
+    "title": "",
+    "summary": "{'id': 3, 'product_name': 'USB-C Hub 7-Port', 'category': 'Electronics', 'price': nan, 'currency': 'USD', 'date_of_sale': 'January 16th 2026', 'seller_id': 'S003', 'stock_quantity': 0.0, 'price_clean': nan, 'date_norm': nan}",
+    "content": "{'id': 3, 'product_name': 'USB-C Hub 7-Port', 'category': 'Electronics', 'price': nan, 'currency': 'USD', 'date_of_sale': 'January 16th 2026', 'seller_id': 'S003', 'stock_quantity': 0.0, 'price_clean': nan, 'date_norm': nan}",
+    "source_type": "CSV",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "sales_records.csv",
+      "price_clean": NaN,
+      "date_norm": NaN
+    }
+  },
+  {
+    "document_id": "4",
+    "title": "",
+    "summary": "{'id': 4, 'product_name': 'Mechanical Keyboard', 'category': 'Electronics', 'price': '1500000', 'currency': 'VND', 'date_of_sale': '2026-01-17', 'seller_id': 'S004', 'stock_quantity': 30.0, 'price_clean': 1500000.0, 'date_norm': '2026-01-17'}",
+    "content": "{'id': 4, 'product_name': 'Mechanical Keyboard', 'category': 'Electronics', 'price': '1500000', 'currency': 'VND', 'date_of_sale': '2026-01-17', 'seller_id': 'S004', 'stock_quantity': 30.0, 'price_clean': 1500000.0, 'date_norm': '2026-01-17'}",
+    "source_type": "CSV",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "sales_records.csv",
+      "price_clean": 1500000.0,
+      "date_norm": "2026-01-17"
+    }
+  },
+  {
+    "document_id": "5",
+    "title": "",
+    "summary": "{'id': 5, 'product_name': 'HDMI Cable 2m', 'category': 'Accessories', 'price': 'five dollars', 'currency': 'USD', 'date_of_sale': '17-01-2026', 'seller_id': 'S005', 'stock_quantity': 200.0, 'price_clean': 5.0, 'date_norm': nan}",
+    "content": "{'id': 5, 'product_name': 'HDMI Cable 2m', 'category': 'Accessories', 'price': 'five dollars', 'currency': 'USD', 'date_of_sale': '17-01-2026', 'seller_id': 'S005', 'stock_quantity': 200.0, 'price_clean': 5.0, 'date_norm': nan}",
+    "source_type": "CSV",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "sales_records.csv",
+      "price_clean": 5.0,
+      "date_norm": NaN
+    }
+  },
+  {
+    "document_id": "6",
+    "title": "",
+    "summary": "{'id': 6, 'product_name': 'Monitor 27 inch 4K', 'category': 'Electronics', 'price': '8500000', 'currency': 'VND', 'date_of_sale': '2026-01-18', 'seller_id': 'S001', 'stock_quantity': 12.0, 'price_clean': 8500000.0, 'date_norm': '2026-01-18'}",
+    "content": "{'id': 6, 'product_name': 'Monitor 27 inch 4K', 'category': 'Electronics', 'price': '8500000', 'currency': 'VND', 'date_of_sale': '2026-01-18', 'seller_id': 'S001', 'stock_quantity': 12.0, 'price_clean': 8500000.0, 'date_norm': '2026-01-18'}",
+    "source_type": "CSV",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "sales_records.csv",
+      "price_clean": 8500000.0,
+      "date_norm": "2026-01-18"
+    }
+  },
+  {
+    "document_id": "7",
+    "title": "",
+    "summary": "{'id': 7, 'product_name': 'Webcam HD 1080p', 'category': 'Electronics', 'price': '-350000', 'currency': 'VND', 'date_of_sale': '2026/01/19', 'seller_id': 'S002', 'stock_quantity': 55.0, 'price_clean': 350000.0, 'date_norm': nan}",
+    "content": "{'id': 7, 'product_name': 'Webcam HD 1080p', 'category': 'Electronics', 'price': '-350000', 'currency': 'VND', 'date_of_sale': '2026/01/19', 'seller_id': 'S002', 'stock_quantity': 55.0, 'price_clean': 350000.0, 'date_norm': nan}",
+    "source_type": "CSV",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "sales_records.csv",
+      "price_clean": 350000.0,
+      "date_norm": NaN
+    }
+  },
+  {
+    "document_id": "8",
+    "title": "",
+    "summary": "{'id': 8, 'product_name': 'SSD 1TB NVMe', 'category': 'Electronics', 'price': '2200000', 'currency': 'VND', 'date_of_sale': '19 Jan 2026', 'seller_id': 'S003', 'stock_quantity': 88.0, 'price_clean': 2200000.0, 'date_norm': nan}",
+    "content": "{'id': 8, 'product_name': 'SSD 1TB NVMe', 'category': 'Electronics', 'price': '2200000', 'currency': 'VND', 'date_of_sale': '19 Jan 2026', 'seller_id': 'S003', 'stock_quantity': 88.0, 'price_clean': 2200000.0, 'date_norm': nan}",
+    "source_type": "CSV",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "sales_records.csv",
+      "price_clean": 2200000.0,
+      "date_norm": NaN
+    }
+  },
+  {
+    "document_id": "9",
+    "title": "",
+    "summary": "{'id': 9, 'product_name': 'Laptop Stand', 'category': 'Accessories', 'price': '450000', 'currency': 'VND', 'date_of_sale': '2026-01-20', 'seller_id': 'S004', 'stock_quantity': nan, 'price_clean': 450000.0, 'date_norm': '2026-01-20'}",
+    "content": "{'id': 9, 'product_name': 'Laptop Stand', 'category': 'Accessories', 'price': '450000', 'currency': 'VND', 'date_of_sale': '2026-01-20', 'seller_id': 'S004', 'stock_quantity': nan, 'price_clean': 450000.0, 'date_norm': '2026-01-20'}",
+    "source_type": "CSV",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "sales_records.csv",
+      "price_clean": 450000.0,
+      "date_norm": "2026-01-20"
+    }
+  },
+  {
+    "document_id": "10",
+    "title": "",
+    "summary": "{'id': 10, 'product_name': 'Bluetooth Speaker', 'category': 'Electronics', 'price': '850000', 'currency': 'VND', 'date_of_sale': '2026-01-20', 'seller_id': 'S005', 'stock_quantity': 40.0, 'price_clean': 850000.0, 'date_norm': '2026-01-20'}",
+    "content": "{'id': 10, 'product_name': 'Bluetooth Speaker', 'category': 'Electronics', 'price': '850000', 'currency': 'VND', 'date_of_sale': '2026-01-20', 'seller_id': 'S005', 'stock_quantity': 40.0, 'price_clean': 850000.0, 'date_norm': '2026-01-20'}",
+    "source_type": "CSV",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "sales_records.csv",
+      "price_clean": 850000.0,
+      "date_norm": "2026-01-20"
+    }
+  },
+  {
+    "document_id": "11",
+    "title": "",
+    "summary": "{'id': 11, 'product_name': 'Gaming Headset', 'category': 'Electronics', 'price': '1200000', 'currency': 'VND', 'date_of_sale': '2026-01-21', 'seller_id': 'S001', 'stock_quantity': 25.0, 'price_clean': 1200000.0, 'date_norm': '2026-01-21'}",
+    "content": "{'id': 11, 'product_name': 'Gaming Headset', 'category': 'Electronics', 'price': '1200000', 'currency': 'VND', 'date_of_sale': '2026-01-21', 'seller_id': 'S001', 'stock_quantity': 25.0, 'price_clean': 1200000.0, 'date_norm': '2026-01-21'}",
+    "source_type": "CSV",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "sales_records.csv",
+      "price_clean": 1200000.0,
+      "date_norm": "2026-01-21"
+    }
+  },
+  {
+    "document_id": "12",
+    "title": "",
+    "summary": "{'id': 12, 'product_name': 'Power Bank 20000mAh', 'category': 'Accessories', 'price': '600000', 'currency': 'VND', 'date_of_sale': '21/01/2026', 'seller_id': 'S002', 'stock_quantity': 70.0, 'price_clean': 600000.0, 'date_norm': nan}",
+    "content": "{'id': 12, 'product_name': 'Power Bank 20000mAh', 'category': 'Accessories', 'price': '600000', 'currency': 'VND', 'date_of_sale': '21/01/2026', 'seller_id': 'S002', 'stock_quantity': 70.0, 'price_clean': 600000.0, 'date_norm': nan}",
+    "source_type": "CSV",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "sales_records.csv",
+      "price_clean": 600000.0,
+      "date_norm": NaN
+    }
+  },
+  {
+    "document_id": "13",
+    "title": "",
+    "summary": "{'id': 13, 'product_name': 'Smart Watch VinHealth', 'category': 'Wearables', 'price': 'Liên hệ', 'currency': 'VND', 'date_of_sale': '2026-01-22', 'seller_id': 'S003', 'stock_quantity': 15.0, 'price_clean': nan, 'date_norm': '2026-01-22'}",
+    "content": "{'id': 13, 'product_name': 'Smart Watch VinHealth', 'category': 'Wearables', 'price': 'Liên hệ', 'currency': 'VND', 'date_of_sale': '2026-01-22', 'seller_id': 'S003', 'stock_quantity': 15.0, 'price_clean': nan, 'date_norm': '2026-01-22'}",
+    "source_type": "CSV",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "sales_records.csv",
+      "price_clean": NaN,
+      "date_norm": "2026-01-22"
+    }
+  },
+  {
+    "document_id": "14",
+    "title": "",
+    "summary": "{'id': 14, 'product_name': 'Phone Case Premium', 'category': 'Accessories', 'price': '150000', 'currency': 'VND', 'date_of_sale': 'January 22nd 2026', 'seller_id': 'S004', 'stock_quantity': 300.0, 'price_clean': 150000.0, 'date_norm': nan}",
+    "content": "{'id': 14, 'product_name': 'Phone Case Premium', 'category': 'Accessories', 'price': '150000', 'currency': 'VND', 'date_of_sale': 'January 22nd 2026', 'seller_id': 'S004', 'stock_quantity': 300.0, 'price_clean': 150000.0, 'date_norm': nan}",
+    "source_type": "CSV",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "sales_records.csv",
+      "price_clean": 150000.0,
+      "date_norm": NaN
+    }
+  },
+  {
+    "document_id": "15",
+    "title": "",
+    "summary": "{'id': 15, 'product_name': 'Laptop VinAI Pro 14', 'category': 'Electronics', 'price': '1200', 'currency': 'USD', 'date_of_sale': '2026-01-22', 'seller_id': 'S001', 'stock_quantity': 45.0, 'price_clean': 1200.0, 'date_norm': '2026-01-22'}",
+    "content": "{'id': 15, 'product_name': 'Laptop VinAI Pro 14', 'category': 'Electronics', 'price': '1200', 'currency': 'USD', 'date_of_sale': '2026-01-22', 'seller_id': 'S001', 'stock_quantity': 45.0, 'price_clean': 1200.0, 'date_norm': '2026-01-22'}",
+    "source_type": "CSV",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "sales_records.csv",
+      "price_clean": 1200.0,
+      "date_norm": "2026-01-22"
+    }
+  },
+  {
+    "document_id": "16",
+    "title": "",
+    "summary": "{'id': 16, 'product_name': 'Tablet 10 inch', 'category': 'Electronics', 'price': '5500000', 'currency': 'VND', 'date_of_sale': '2026-01-23', 'seller_id': 'S005', 'stock_quantity': 20.0, 'price_clean': 5500000.0, 'date_norm': '2026-01-23'}",
+    "content": "{'id': 16, 'product_name': 'Tablet 10 inch', 'category': 'Electronics', 'price': '5500000', 'currency': 'VND', 'date_of_sale': '2026-01-23', 'seller_id': 'S005', 'stock_quantity': 20.0, 'price_clean': 5500000.0, 'date_norm': '2026-01-23'}",
+    "source_type": "CSV",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "sales_records.csv",
+      "price_clean": 5500000.0,
+      "date_norm": "2026-01-23"
+    }
+  },
+  {
+    "document_id": "17",
+    "title": "",
+    "summary": "{'id': 17, 'product_name': 'Earbuds TWS Pro', 'category': 'Electronics', 'price': '750000', 'currency': 'VND', 'date_of_sale': '23-01-2026', 'seller_id': 'S001', 'stock_quantity': 60.0, 'price_clean': 750000.0, 'date_norm': nan}",
+    "content": "{'id': 17, 'product_name': 'Earbuds TWS Pro', 'category': 'Electronics', 'price': '750000', 'currency': 'VND', 'date_of_sale': '23-01-2026', 'seller_id': 'S001', 'stock_quantity': 60.0, 'price_clean': 750000.0, 'date_norm': nan}",
+    "source_type": "CSV",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "sales_records.csv",
+      "price_clean": 750000.0,
+      "date_norm": NaN
+    }
+  },
+  {
+    "document_id": "18",
+    "title": "",
+    "summary": "{'id': 18, 'product_name': 'Screen Protector', 'category': 'Accessories', 'price': '85000', 'currency': 'VND', 'date_of_sale': '2026/01/24', 'seller_id': 'S002', 'stock_quantity': 500.0, 'price_clean': 85000.0, 'date_norm': nan}",
+    "content": "{'id': 18, 'product_name': 'Screen Protector', 'category': 'Accessories', 'price': '85000', 'currency': 'VND', 'date_of_sale': '2026/01/24', 'seller_id': 'S002', 'stock_quantity': 500.0, 'price_clean': 85000.0, 'date_norm': nan}",
+    "source_type": "CSV",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "sales_records.csv",
+      "price_clean": 85000.0,
+      "date_norm": NaN
+    }
+  },
+  {
+    "document_id": "19",
+    "title": "",
+    "summary": "{'id': 19, 'product_name': 'External HDD 2TB', 'category': 'Electronics', 'price': '1800000', 'currency': 'VND', 'date_of_sale': '24 Jan 2026', 'seller_id': 'S003', 'stock_quantity': 35.0, 'price_clean': 1800000.0, 'date_norm': nan}",
+    "content": "{'id': 19, 'product_name': 'External HDD 2TB', 'category': 'Electronics', 'price': '1800000', 'currency': 'VND', 'date_of_sale': '24 Jan 2026', 'seller_id': 'S003', 'stock_quantity': 35.0, 'price_clean': 1800000.0, 'date_norm': nan}",
+    "source_type": "CSV",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "sales_records.csv",
+      "price_clean": 1800000.0,
+      "date_norm": NaN
+    }
+  },
+  {
+    "document_id": "20",
+    "title": "",
+    "summary": "{'id': 20, 'product_name': 'RAM DDR5 16GB', 'category': 'Electronics', 'price': nan, 'currency': 'VND', 'date_of_sale': '2026-01-25', 'seller_id': 'S004', 'stock_quantity': 42.0, 'price_clean': nan, 'date_norm': '2026-01-25'}",
+    "content": "{'id': 20, 'product_name': 'RAM DDR5 16GB', 'category': 'Electronics', 'price': nan, 'currency': 'VND', 'date_of_sale': '2026-01-25', 'seller_id': 'S004', 'stock_quantity': 42.0, 'price_clean': nan, 'date_norm': '2026-01-25'}",
+    "source_type": "CSV",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "sales_records.csv",
+      "price_clean": NaN,
+      "date_norm": "2026-01-25"
+    }
+  },
+  {
+    "document_id": "legacy_pipeline.py",
+    "title": "legacy-legacy_pipeline.py",
+    "summary": "module: VinData Legacy Pipeline v1.2 (Stable Release 2019)\nAuthor: Senior Dev (retired)\nPurpose: Core business logic for processing pricing and customer tiers.\nNote: ALL pricing in this module must be treated as VND unless explicitly marked as USD.\n      The AI agent must extract these rules into th...",
+    "content": "module: VinData Legacy Pipeline v1.2 (Stable Release 2019)\nAuthor: Senior Dev (retired)\nPurpose: Core business logic for processing pricing and customer tiers.\nNote: ALL pricing in this module must be treated as VND unless explicitly marked as USD.\n      The AI agent must extract these rules into the system instructions.\n\ncalculate_discount: Business Logic Rule 001: \nIf customer tier is 'GOLD', apply 15% discount. \nIf tier is 'SILVER', apply 10% discount.\nOtherwise, no discount.\n\nIMPORTANT: Discounts are NOT cumulative with seasonal sales.\n\nget_region_code: Business Logic Rule 002:\nMap city names to region codes.\n- Hanoi -> 'HN'\n- Ho Chi Minh City -> 'HCM'\n- Da Nang -> 'DN'\n- Anything else -> 'OT' (Other)\n\nBusiness Logic Rule 001:\nBusiness Logic Rule 002:",
+    "source_type": "Code",
+    "author": "Unknown",
+    "timestamp": null,
+    "tags": [],
+    "language": null,
+    "source_metadata": {
+      "original_file": "legacy_pipeline.py"
+    }
+  }
+]
